@@ -1,13 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: 'Inter', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p {
+	font-size: 1.6rem;
+}
+
+h1 {
+	font-size: 6rem;
+	font-weight: 800;
+}
+
+.app {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+}
+
+.app::before {
+	content: '';
+	background: url(./assets/sunshine.jpeg) center center/cover no-repeat;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.app .search {
+	text-align: center;
+	padding: 1rem;
+}
+
+.app input {
+	padding: 0.7rem 1.25rem;
+	border-radius: 2rem;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	background: rgba(255, 255, 255, 0.7);
+	outline: none;
+}
+
+.app input:hover {
+	border-color: #34495e;
+}
+
+.container {
+	max-width: 700px;
+	height: 700px;
+	margin: auto;
+	padding: 0 1rem;
+	position: relative;
+	top: 3%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.app .top {
+	width: 100%;
+	margin: 1rem auto;
+}
+
+.app .description {
+	position: relative;
+	right: -90%;
+	transform-origin: 0 0;
+	transform: rotate(269deg);
+}
+
+.app .bottom {
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+	width: 100%;
+	margin: 1rem auto;
+	padding: 1rem;
+	border-radius: 12px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bold {
+	font-weight: 800;
 }

@@ -1,0 +1,43 @@
+{
+	"coord": {
+		"lon": -93.7249,
+		"lat": 41.1217
+	},
+	"weather": [
+		{
+			"id": 800,
+			"main": "Clear",
+			"description": "clear sky",
+			"icon": "01d"
+		}
+	],
+	"base": "stations",
+	"main": {
+		"temp": 300.38,
+		"feels_like": 299.57,
+		"temp_min": 300.26,
+		"temp_max": 300.83,
+		"pressure": 1015,
+		"humidity": 26
+	},
+	"visibility": 10000,
+	"wind": {
+		"speed": 0,
+		"deg": 0
+	},
+	"clouds": {
+		"all": 0
+	},
+	"dt": 1654289972,
+	"sys": {
+		"type": 1,
+		"id": 4480,
+		"country": "US",
+		"sunrise": 1654253041,
+		"sunset": 1654306947
+	},
+	"timezone": -18000,
+	"id": 4870211,
+	"name": "Jamison",
+	"cod": 200
+}
